@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postContent"
+    style="@style/AppCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding_widgets">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TextViewTimelineTitle"
+            tools:text="Titulo grande" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/TextViewTimelineMessage"
+            android:layout_marginTop="@dimen/form_content_top_margin"
+            tools:text="Texto grande e repetido verificando o espaçamento Texto grande e repetido verificando o espaçamento Texto grande e repetido verificando o espaçamento" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            style="@style/TextViewTimelineDate"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/form_content_top_margin"
+            tools:text="10/10/1000" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

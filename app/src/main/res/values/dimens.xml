@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin -->
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="form_input_top_margin">6dp</dimen>
+    <dimen name="form_content_top_margin">12dp</dimen>
+    <dimen name="login_content_top_margin">40dp</dimen>
+    <dimen name="to_toolbar_top_margin">30dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="drawable_edit_padding">5dp</dimen>
+
+    <!-- Size -->
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="card_radius">8dp</dimen>
+    <dimen name="icon_size">40dp</dimen>
+    <dimen name="toolbar_icon">28dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_timeline_app_title">20sp</dimen>
+    <dimen name="text_size_timeline_title">18sp</dimen>
+    <dimen name="text_size_timeline_text">15sp</dimen>
+    <dimen name="text_size_timeline_date">12sp</dimen>
+    <dimen name="text_size_login_title">24sp</dimen>
+    <dimen name="text_size_timeline_small">12sp</dimen>
+</resources>

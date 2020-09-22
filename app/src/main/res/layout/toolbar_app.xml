@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/backButtonImage"
+        style="@style/Clickable"
+        android:layout_width="@dimen/toolbar_icon"
+        android:layout_height="@dimen/toolbar_icon"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_chevron_left_black_36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleOfBackButton"
+        style="@style/TextViewTitle"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="46dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/backButtonImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <ImageView
+        android:id="@+id/iconMoreToolbar"
+        style="@style/Clickable"
+        android:layout_width="@dimen/toolbar_icon"
+        android:layout_height="@dimen/toolbar_icon"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/baseline_more_vert_black_36dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

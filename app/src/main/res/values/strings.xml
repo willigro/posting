@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Posting</string>
+
+    <string name="timeline_title">Posts</string>
+    <string name="new_post_title">Novo Post</string>
+    <string name="update_post_title">Atualizar Post</string>
+
+    <!-- Loading -->
+    <string name="loading">Carregando</string>
+
+    <!-- Login -->
+    <string name="nickname">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="create_account">Ainda não é um Posting? Registe-se aqui</string>
+    <string name="nickname_error">Informe o usuário</string>
+    <string name="password_error">Informe a senha</string>
+    <string name="login_not_found">Usuário não encontrado</string>
+    <string name="logged_msg">Logado com sucesso</string>
+    <string name="login_error">Usuário não encontrado</string>
+    <string name="keep_me_connected">Mantenha-me conectado</string>
+
+    <!-- Create Account -->
+    <string name="confirm_password">Confirme a Senha</string>
+    <string name="confirm_password_error">Informe a confirmação da senha</string>
+    <string name="account_registered">Conta registrada!</string>
+    <string name="account_register_error">Ocorreu um erro ao tentar registrar!</string>
+    <string name="do_register">Registrar</string>
+
+    <!-- Keep Post -->
+    <string name="create_new_posting">Novo Post</string>
+    <string name="update_posting">Atualizar Post</string>
+    <string name="post_title">Titulo do Post</string>
+    <string name="post_description">Descrição do Post</string>
+    <string name="title_error">Informe um titulo</string>
+    <string name="description_error">Informe uma descrição</string>
+    <string name="register_error">Ocorreu um erro ao tentar registrar o post. Por favor, tente novamente.</string>
+    <string name="update_error">Ocorreu um erro ao tentar atualizar o post. Por favor, tente novamente.</string>
+    <string name="delete_error">Ocorreu um erro ao tentar deletar o post. Por favor, tente novamente.</string>
+    <string name="post_deleted">Deletado</string>
+    <string name="post_updated">Atualizado</string>
+    <string name="post_registered">Registrado</string>
+
+    <!-- Menu -->
+    <string name="menu_update">Atualizar</string>
+    <string name="menu_delete">Remover</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.rittmann.posting.ui.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_timelineFragment"
+            app:destination="@id/timelineFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_timelineActivity"
+            app:destination="@id/timelineActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/timelineFragment"
+        android:name="com.rittmann.posting.ui.timeline.TimelineFragment"
+        android:label="timeline_fragment"
+        tools:layout="@layout/timeline_fragment">
+        <action
+            android:id="@+id/action_timelineFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/postingFragment"
+        android:name="com.rittmann.posting.ui.keep.KeepPostFragment"
+        android:label="fragment_posting"
+        tools:layout="@layout/fragment_keep_post" >
+        <argument
+            android:name="post"
+            app:argType="com.rittmann.posting.data.basic.Posting"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_postingFragment_to_timelineFragment"
+            app:destination="@id/timelineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.rittmann.posting.ui.createaccount.CreateAccountFragment"
+        android:label="create_account_fragment"
+        tools:layout="@layout/create_account_fragment">
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/timelineActivity"
+        android:name="com.rittmann.posting.ui.timeline.TimelineActivity"
+        android:label="TimelineActivity" >
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </activity>
+</navigation>

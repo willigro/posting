@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_buttons_conclude_cancel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/default_margin_widgets"
+        android:layout_marginRight="@dimen/default_margin_widgets"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/default_padding_widgets"
+        android:text="@string/cancel_"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_widgets"
+        android:layout_marginLeft="@dimen/default_margin_widgets"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/default_padding_widgets"
+        android:text="@string/conclude_"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

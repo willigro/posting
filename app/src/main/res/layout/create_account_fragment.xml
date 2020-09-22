@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding_widgets"
+    tools:context=".ui.createaccount.CreateAccountFragment">
+
+    <TextView
+        android:id="@+id/titleLogin"
+        style="@style/TextViewLoginTitle"
+        android:layout_marginTop="@dimen/login_content_top_margin"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelNickname"
+        style="@style/TextViewForm"
+        android:layout_marginTop="@dimen/login_content_top_margin"
+        android:text="@string/nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLogin" />
+
+    <EditText
+        android:id="@+id/edtNickname"
+        style="@style/EditTextForm"
+        android:drawableStart="@drawable/baseline_person_outline_black_18dp"
+        android:drawableLeft="@drawable/baseline_person_outline_black_18dp"
+        android:drawablePadding="@dimen/drawable_edit_padding"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNickname"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/labelPassword"
+        style="@style/TextViewForm"
+        android:text="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNickname" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/EditTextForm"
+        android:drawableStart="@drawable/baseline_lock_black_18dp"
+        android:drawableLeft="@drawable/baseline_lock_black_18dp"
+        android:drawablePadding="@dimen/drawable_edit_padding"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPassword"
+        tools:ignore="Autofill,LabelFor" />
+
+    <TextView
+        android:id="@+id/labelConfirmPassword"
+        style="@style/TextViewForm"
+        android:text="@string/confirm_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        style="@style/EditTextForm"
+        android:drawableStart="@drawable/baseline_lock_black_18dp"
+        android:drawableLeft="@drawable/baseline_lock_black_18dp"
+        android:drawablePadding="@dimen/drawable_edit_padding"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelConfirmPassword"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        style="@style/ButtonForm"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:text="@string/do_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

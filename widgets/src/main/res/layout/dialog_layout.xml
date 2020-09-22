@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dialogTitleTextView"
+        style="@style/TextViewDialogTitleWidgets"
+        android:layout_marginBottom="@dimen/default_margin_widgets"
+        android:visibility="gone"
+        tools:text="Title"
+        tools:visibility="visible" />
+
+    <com.rittmann.widgets.dialog.WebViewResizeCustom
+        android:id="@+id/dialogWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/default_margin_widgets"
+        android:layout_marginRight="@dimen/default_margin_widgets"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <com.rittmann.widgets.dialog.ScrollViewResizeCustom
+        android:id="@+id/scrollContentDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/dialogSubtitleTextView"
+            style="@style/TextViewDialogMessageWidgets"
+            tools:text="Subtitle" />
+    </com.rittmann.widgets.dialog.ScrollViewResizeCustom>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/default_margin_widgets"
+        android:background="@android:color/black" />
+
+    <include
+        layout="@layout/content_buttons_conclude_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_widgets" />
+</LinearLayout>
